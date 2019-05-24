@@ -9,23 +9,6 @@ class EmailParser
     @emails = emails 
   end 
   
-  # def parse
-  #   if @emails.include?(",")
-  #     @emails.split(", ")
-	 # else 
-  #     @emails.split(" ").uniq
-  #   end 
-  # end
-  
-  # def parse
-  #   em_arr = @emails.split(" ").uniq 
-  #   em_arr.each do |x|
-  #     if x.include?(",")
-  #       x[-1] = ""
-  #     end
-  #   end 
-  # end
-  
    def parse 
     @emails.split(/,*\s/).uniq
   end 
