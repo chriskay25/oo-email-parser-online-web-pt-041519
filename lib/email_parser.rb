@@ -26,4 +26,8 @@ class EmailParser
   #   end 
   # end
   
+   def parse 
+    @emails.split(/,*\s/)
+  end 
+  
 end 
