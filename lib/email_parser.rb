@@ -17,13 +17,13 @@ class EmailParser
   #   end 
   # end
   
-  def parse
-    em_arr = @emails.split(" ").uniq 
-    em_arr.each do |x|
-      if x.include?(",")
-        x[-1] = ""
-      end
-    end 
-  end
+  # def parse
+  #   em_arr = @emails.split(" ").uniq 
+  #   em_arr.each do |x|
+  #     if x.include?(",")
+  #       x[-1] = ""
+  #     end
+  #   end 
+  # end
   
 end 
